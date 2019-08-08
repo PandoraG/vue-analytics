@@ -1,9 +1,12 @@
 ## Event tracking
 
 Event tracking can be achieved in different ways, following Google specifications
+
 可以按照Google规范以不同方式实现事件跟踪
 
+
 passing parameters in this exact order
+
 以这个确切的顺序传递参数
 
 ```js
