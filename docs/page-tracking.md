@@ -1,10 +1,10 @@
-## Page tracking
+## 网页跟踪
 
-Page tracking is the most important feature of Google Analytics and you can achieve that in different ways
+网页跟踪是Google Analytics最重要的功能，您可以通过不同方式实现这一目标。
 
-### Enable page auto tracking
+### 启用页面自动跟踪
 
-The most easy way to track your application, is to pass your VueRouter instance to the plugin and let it handle everything for you
+跟踪应用程序最简单的方法是将VueRouter实例传递给插件，让它为您处理所有事情。
 
 ```js
 import Vue from 'vue'
@@ -21,15 +21,15 @@ Vue.use(VueAnalytics, {
 })
 ```
 
-### Manual page tracking
+### 手动页面跟踪
 
-The standard way is just passing the current page path
+标准方法是传递当前页面路径。
 
 ```js
 this.$ga.page('/')
 ```
 
-passing as an object literal
+传递一个对象字面量。
 
 ```js
 this.$ga.page({
@@ -39,7 +39,7 @@ this.$ga.page({
 })
 ```
 
-or you can even pass the VueRouter instance scoped in your component and the plugin will automatically detect the current route name, path and location: just be sure to add the `name` property in your route object
+或者您甚至可以传递组件中的VueRouter实例，插件将自动检测当前路由名称，路径和位置：只需确保在路由对象中添加`name`属性。
 
 ```js
 this.$ga.page(this.$router)
@@ -47,9 +47,10 @@ this.$ga.page(this.$router)
 
 Google Analytics docs: [page tracking](https://developers.google.com/analytics/devguides/collection/analyticsjs/pages)
 
-### Use screenview with autotracking
 
-It is also possible to use autotracking and screen tracking by passing true to the `screenview` property in the `autoTracking` object
+### 使用screenview进行自动跟踪
+
+通过将true传递给 `autoTracking` 对象中的 `screenview` 属性，也可以使用自动跟踪和屏幕跟踪。
 
 ```js
 import Vue from 'vue'
@@ -65,7 +66,7 @@ Vue.use(VueAnalytics, {
 
 ### Disable pageview hit on page load
 
-Page auto tracking sends a pageview event on page load, but it is possible to disable that
+页面自动跟踪在页面加载时发送网页浏览事件，但可以禁用它。
 
 ```js
 import Vue from 'vue'
@@ -85,9 +86,9 @@ Vue.use(VueAnalytics, {
 })
 ```
 
-### Disable page auto tracking
+### 禁用页面自动跟踪
 
-To disable auto tracking we can just remove the VueRouter instance, but if you need to track only in specific environment or situations, it is also possible to disable page auto tracking like so
+要禁用自动跟踪，我们只需删除VueRouter实例，但如果您只需要在特定环境或情况下进行跟踪，也可以禁用页面自动跟踪。
 
 ```js
 Vue.use(VueAnalytics, {
@@ -101,8 +102,8 @@ Vue.use(VueAnalytics, {
 
 ### Ignore routes on page auto tracking
 
-To disable auto tracking for specific routes, you need to pass an array of strings to the plugin options.
-The string needs to be the route `name` or the route `path`.
+要禁用特定路由的自动跟踪，您需要将一个字符串数组传递给插件选项。
+字符串需要是路由`name`或路由`path`。
 
 ```js
 Vue.use(VueAnalytics, {
@@ -113,9 +114,8 @@ Vue.use(VueAnalytics, {
 
 ### Auto track with custom data
 
-When auto-tracking is possible to pass a function with a custom object shape to use as a tracker.
-
-The `pageViewTemplate` passes the current route as parameter
+当自动跟踪可以传递具有自定义对象形状的功能以用作跟踪器时。
+`pageViewTemplate`将当前路由作为参数传递
 
 ```js
 Vue.use(VueAnalytics, {
@@ -133,7 +133,7 @@ Vue.use(VueAnalytics, {
 })
 ```
 
-It is also possible to add custom data structure for each route, using the meta object
+还可以使用元对象为每个路径添加自定义数据结构。
 
 ```js
 import Vue from 'vue'
