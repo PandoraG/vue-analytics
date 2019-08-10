@@ -46,7 +46,7 @@ export default {
 
 #### 导入方法
 
-To be able to use methods import, make sure you install vue-analytics **before** you want to use them
+为了能够使用方法导入，请确保在要使用它们之前安装vue-analytics；
 
 ```js
 import { page } from 'vue-analytics'
@@ -76,7 +76,8 @@ export default {
 
 ## 跟踪（Track）多个帐户
 
-Pass an array of strings for a multiple tracking system. Every hit will be fired twice: each time with a different tracker name
+为多个跟踪系统传递一串字符串数组。
+每次点击都会被触发两次：每次都有不同的跟踪器名称
 
 ```js
 import Vue from 'vue'
@@ -89,7 +90,7 @@ Vue.use(VueAnalytics, {
 
 ## Use functions or/and Promises
 
-It is also possible to pass a function, a Promise or a function that returns a Promise: as soon as it returns always a string or an array of strings
+也可以传递一个函数，一个Promise或一个返回Promise的函数：只要它总是返回一个字符串或一个字符串数组
 
 ```js
 import Vue from 'vue'
