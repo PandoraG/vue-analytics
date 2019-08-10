@@ -26,9 +26,9 @@ Vue.use(VueAnalytics, { ... })
 ```
 
 ### 使用
-it is possible to use the api in two different ways:
- - within the component scope
- - importing methods separately
+可以通过两种不同的方式使用api：
+ - 在组件范围内
+ - 单独导入方法
 
 #### 组件作用域
 
