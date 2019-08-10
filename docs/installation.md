@@ -1,6 +1,6 @@
-## Get started
+## 开始
 
-### Installation
+### 安装
 ```bash
 npm install vue-analytics
 ```
@@ -25,12 +25,12 @@ const VueAnalytics = require('vue-analytics').default
 Vue.use(VueAnalytics, { ... })
 ```
 
-### Usage
+### 使用
 it is possible to use the api in two different ways:
  - within the component scope
  - importing methods separately
 
-#### Component scope
+#### 组件作用域
 
 ```js
 export default {
@@ -44,7 +44,7 @@ export default {
 }
 ```
 
-#### Import methods
+#### 导入方法
 
 To be able to use methods import, make sure you install vue-analytics **before** you want to use them
 
@@ -74,7 +74,7 @@ export default {
 - exception
 - social
 
-## Track multiple accounts
+## 跟踪（Track）多个帐户
 
 Pass an array of strings for a multiple tracking system. Every hit will be fired twice: each time with a different tracker name
 
