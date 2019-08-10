@@ -56,10 +56,10 @@ npm install vue-analytics
 
 ## User guide
 
-* [Get started](/docs/installation.md)
-* [How to load Google Analytics](/docs/script-loader.md)
-* [Page tracking](/docs/page-tracking.md)
-* [Event tracking](/docs/event-tracking.md)
+* [开始](/docs/installation.md)
+* [如何加载 Google Analytics](/docs/script-loader.md)
+* [页面跟踪](/docs/page-tracking.md)
+* [事件跟踪](/docs/event-tracking.md)
 * [Screen tracking](/docs/screen-tracking.md)
 * [Event batches](/docs/batch.md)
 * [v-ga](/docs/v-ga.md)
