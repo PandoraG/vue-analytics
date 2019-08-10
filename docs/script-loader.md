@@ -1,13 +1,13 @@
-## How to load Google Analytics script
+## 如何加载Google Analytics脚本
 
-**By default nothing is needed: the plugin does everything for you!**
+**默认情况下，不需要任何东西：插件为您完成所有操作!**
 
-However, in some cases, you might want to avoid auto-loading the analytics.js script because:
-- maybe the framework you're using already does it for you
-- you really can't remove it from your project
-- other issue that I can't come up with
+但是，在某些情况下，您可能希望避免自动加载analytics.js脚本，因为：
+ - 也许你正在使用的框架已经为你做了
+ - 你真的无法从你的项目中删除它
+ - 我无法想出的其他问题
 
-So for all those cases it is possible to let the plugin detect if an analytics script has been added already in your html
+因此，对于所有这些情况，可以让插件检测是否已在html中添加了分析脚本
 
 ```js
 import Vue from 'vue'
@@ -19,7 +19,7 @@ Vue.use(VueAnalytics, {
 })
 ```
 
-or just disable the script loader
+或者只是禁用脚本加载器
 
 ```js
 import Vue from 'vue'
@@ -32,5 +32,6 @@ Vue.use(VueAnalytics, {
 ```
 
 ### Important
-It is not possible for the plugin to remove the initial trackers, because it needs them to create all methods for the multi-tracking feature.
-**If you can't remove initial trackers, don't use this plugin: the outcome could be unpredictable.**
+可能插件无法删除初始跟踪器，因为它需要它们为多跟踪功能创建所有方法
+
+**如果您无法删除初始跟踪器，请不要使用此插件：结果可能无法预测.**
